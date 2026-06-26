@@ -1,0 +1,22 @@
+/* Custom styles for Library Scarlet Devil */
+
+:root {
+  --scarlet-accent: #8b1e3f;
+}
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 900px;
+}
+
+.bd-sidebar-primary {
+  font-size: 0.95rem;
+}
+
+.admonition-title {
+  font-weight: 700;
+}
+
+code.literal {
+  border-radius: 0.35rem;
+  padding: 0.1rem 0.25rem;
+}
