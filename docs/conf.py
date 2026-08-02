@@ -5,9 +5,10 @@ from __future__ import annotations
 project = "Библиотека алой дьяволицы"
 author = "Dreafun"
 copyright = "2026, Dreafun"
-release = "0.2.0"
+release = "0.2.1"
 
 language = "ru"
+root_doc = "index"
 
 extensions = [
     "myst_parser",
@@ -34,9 +35,12 @@ html_short_title = "Алая библиотека"
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 
-html_theme_options = {
-    # Тёмная тема включается при первом посещении.
+# PyData Sphinx Theme получает режим по умолчанию через контекст шаблонов.
+html_context = {
     "default_mode": "dark",
+}
+
+html_theme_options = {
     # В левом меню открыта только верхняя полка, остальные раскрываются по клику.
     "show_nav_level": 1,
     "navigation_depth": 6,
