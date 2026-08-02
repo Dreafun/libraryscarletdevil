@@ -9,6 +9,7 @@
    :maxdepth: 5
    :caption: Содержимое полки:
 
+   operating-systems/index
    guides/index
    start
    template
