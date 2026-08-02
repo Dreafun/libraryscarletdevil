@@ -5,14 +5,13 @@ from __future__ import annotations
 project = "Библиотека алой дьяволицы"
 author = "Dreafun"
 copyright = "2026, Dreafun"
-release = "0.2.1"
+release = "0.2.2"
 
 language = "ru"
 root_doc = "index"
 
 extensions = [
     "myst_parser",
-    "sphinx.ext.todo",
     "sphinx.ext.autosectionlabel",
     "sphinx_copybutton",
 ]
@@ -26,7 +25,6 @@ source_suffix = {
 }
 
 autosectionlabel_prefix_document = True
-todo_include_todos = True
 
 html_theme = "pydata_sphinx_theme"
 html_title = "Библиотека алой дьяволицы"
@@ -34,6 +32,7 @@ html_short_title = "Алая библиотека"
 
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
+html_js_files = ["image-lightbox.js"]
 
 # PyData Sphinx Theme получает режим по умолчанию через контекст шаблонов.
 html_context = {
