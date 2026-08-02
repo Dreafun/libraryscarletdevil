@@ -2,10 +2,10 @@
 
 from __future__ import annotations
 
-project = "Library Scarlet Devil"
+project = "Библиотека алой дьяволицы"
 author = "Dreafun"
 copyright = "2026, Dreafun"
-release = "0.1.0"
+release = "0.2.0"
 
 language = "ru"
 
@@ -24,25 +24,27 @@ source_suffix = {
     ".md": "markdown",
 }
 
-# Чтобы одинаковые заголовки в разных файлах не конфликтовали.
 autosectionlabel_prefix_document = True
-
-# Показывать блоки todo в собранной документации.
 todo_include_todos = True
 
 html_theme = "pydata_sphinx_theme"
-html_title = "Library Scarlet Devil"
-html_short_title = "Scarlet Library"
+html_title = "Библиотека алой дьяволицы"
+html_short_title = "Алая библиотека"
 
 html_static_path = ["_static"]
 html_css_files = ["custom.css"]
 
 html_theme_options = {
-    "show_toc_level": 2,
-    "navigation_depth": 4,
-    "collapse_navigation": False,
+    # Тёмная тема включается при первом посещении.
+    "default_mode": "dark",
+    # В левом меню открыта только верхняя полка, остальные раскрываются по клику.
+    "show_nav_level": 1,
+    "navigation_depth": 6,
+    "collapse_navigation": True,
+    # Справа показывается навигация по заголовкам текущей статьи.
+    "show_toc_level": 3,
+    "secondary_sidebar_items": ["page-toc"],
     "navbar_align": "left",
-    "secondary_sidebar_items": ["page-toc", "sourcelink"],
     "icon_links": [
         {
             "name": "GitHub",
