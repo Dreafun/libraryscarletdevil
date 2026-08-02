@@ -1,42 +1,47 @@
-# Library Scarlet Devil
+# Библиотека алой дьяволицы
 
-Библиотека статей на базе **Sphinx** и **Read the Docs**.
+Сайт-библиотека на базе **Sphinx**, **PyData Sphinx Theme** и **Read the Docs**.
 
-Здесь можно хранить заметки, гайды, лорные материалы, технические статьи и любые другие тексты в формате документации.
+## Что уже настроено
+
+- тёмная тема по умолчанию;
+- шрифт Tahoma с безопасными системными заменами;
+- раскрывающиеся полки и вложенные полки в левом меню;
+- навигация по заголовкам текущей статьи в правом меню;
+- главная страница с приветствием и переходом к пользовательскому гайду;
+- шаблон статьи и инструкция по публикации новых материалов.
 
 ## Структура
 
 ```text
 .
-├── .readthedocs.yaml          # конфигурация сборки Read the Docs
+├── .readthedocs.yaml
 ├── docs/
-│   ├── conf.py                # конфигурация Sphinx
-│   ├── index.rst              # главная страница документации
-│   ├── requirements.txt       # зависимости для сборки
+│   ├── conf.py
+│   ├── index.rst
+│   ├── guide.rst
+│   ├── requirements.txt
 │   ├── articles/
-│   │   ├── index.rst          # раздел статей
-│   │   ├── start.rst          # первая тестовая статья
-│   │   └── template.rst       # шаблон новой статьи
+│   │   ├── index.rst
+│   │   ├── start.rst
+│   │   ├── template.rst
+│   │   └── guides/
+│   │       ├── index.rst
+│   │       └── add-article.rst
 │   └── _static/
-│       └── custom.css         # кастомные стили
+│       └── custom.css
 └── .gitignore
 ```
 
 ## Как добавить статью
 
-1. Создай новый файл в папке `docs/articles/`, например:
+1. Скопируй `docs/articles/template.rst`.
+2. Переименуй копию латиницей, например `new-article.rst`.
+3. Напиши статью.
+4. Добавь `new-article` в `toctree` файла нужной полки.
+5. Отправь изменения в GitHub и дождись сборки Read the Docs.
 
-   ```text
-   docs/articles/my-new-article.rst
-   ```
-
-2. Добавь его в список `toctree` внутри файла:
-
-   ```text
-   docs/articles/index.rst
-   ```
-
-3. Напиши статью в формате reStructuredText.
+Подробная инструкция находится в `docs/articles/guides/add-article.rst`.
 
 ## Локальная сборка
 
@@ -49,12 +54,4 @@ pip install -r docs/requirements.txt
 sphinx-build -b html docs docs/_build/html
 ```
 
-После сборки открой:
-
-```text
-docs/_build/html/index.html
-```
-
-## Read the Docs
-
-Read the Docs будет использовать `.readthedocs.yaml` и собирать документацию из папки `docs/`.
+Готовый сайт появится в `docs/_build/html/`.
