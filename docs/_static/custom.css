@@ -84,3 +84,105 @@ code.literal {
   border-radius: 0.35rem;
   padding: 0.1rem 0.25rem;
 }
+
+/* Иллюстрации открываются в полном размере поверх текущей страницы. */
+.bd-article img.is-zoomable {
+  max-width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  border-radius: 0.35rem;
+}
+
+.bd-article img.is-zoomable:focus-visible {
+  outline: 3px solid var(--scarlet-accent-soft);
+  outline-offset: 4px;
+}
+
+body.image-lightbox-open {
+  overflow: hidden;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  overflow: auto;
+  background: rgb(8 7 12 / 94%);
+  overscroll-behavior: contain;
+}
+
+.image-lightbox[hidden] {
+  display: none;
+}
+
+.image-lightbox.is-open {
+  display: block;
+}
+
+.image-lightbox__stage {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  min-width: 100%;
+  min-height: 100%;
+  padding: 4.5rem 2rem 2rem;
+}
+
+.image-lightbox__image {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  border-radius: 0.4rem;
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 55%);
+  cursor: zoom-out;
+}
+
+.image-lightbox__caption {
+  box-sizing: border-box;
+  position: sticky;
+  left: 1rem;
+  max-width: min(90vw, 920px);
+  margin: 1rem auto 0;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--library-border);
+  border-radius: 0.45rem;
+  background: rgb(26 23 34 / 92%);
+  color: #eee9f3;
+  text-align: center;
+}
+
+.image-lightbox__close {
+  position: fixed;
+  top: 0.75rem;
+  right: 0.9rem;
+  z-index: 10001;
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 28%);
+  border-radius: 50%;
+  background: rgb(26 23 34 / 92%);
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-lightbox__close:hover,
+.image-lightbox__close:focus-visible {
+  background: var(--scarlet-accent);
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .image-lightbox__stage {
+    padding: 4rem 1rem 1.25rem;
+  }
+}
