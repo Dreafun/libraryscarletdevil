@@ -1,15 +1,79 @@
-/* Custom styles for Library Scarlet Devil */
+/* Оформление «Библиотеки алой дьяволицы». */
 
 :root {
-  --scarlet-accent: #8b1e3f;
+  --scarlet-accent: #d35b7d;
+  --scarlet-accent-soft: #f08ca8;
+  --library-bg: #111019;
+  --library-surface: #1a1722;
+  --library-surface-raised: #231e2d;
+  --library-border: #40364d;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+.bd-header,
+.bd-sidebar-primary,
+.bd-sidebar-secondary,
+.bd-main,
+.bd-content {
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: var(--scarlet-accent-soft);
+  --pst-color-secondary: #c59af4;
+  --pst-color-background: var(--library-bg);
+  --pst-color-on-background: var(--library-surface);
+  --pst-color-surface: var(--library-surface-raised);
+  --pst-color-border: var(--library-border);
+  --pst-color-text-base: #eee9f3;
+  --pst-color-text-muted: #bdb4c8;
+  --pst-color-link: #ef91aa;
+  --pst-color-link-hover: #ffc1d1;
+}
+
+.bd-header {
+  border-bottom: 1px solid var(--library-border);
 }
 
 .bd-main .bd-content .bd-article-container {
-  max-width: 900px;
+  max-width: 920px;
 }
 
-.bd-sidebar-primary {
+.bd-sidebar-primary,
+.bd-sidebar-secondary {
   font-size: 0.95rem;
+}
+
+.bd-sidebar-primary .sidebar-primary-items__start,
+.bd-sidebar-primary .sidebar-primary-items__end {
+  gap: 0.3rem;
+}
+
+.bd-sidebar-primary .toctree-l1 > a {
+  font-weight: 700;
+}
+
+.bd-sidebar-primary a,
+.bd-sidebar-secondary a {
+  border-radius: 0.35rem;
+}
+
+.bd-sidebar-primary a:hover,
+.bd-sidebar-secondary a:hover {
+  background: rgb(211 91 125 / 12%);
+}
+
+.bd-sidebar-secondary {
+  border-left: 1px solid var(--library-border);
+}
+
+.admonition {
+  border-radius: 0.6rem;
 }
 
 .admonition-title {
