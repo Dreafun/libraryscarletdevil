@@ -28,7 +28,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat1.webp
    :alt: Кнопка «Параметры» в меню «Пуск» Windows 10
    :align: center
-   :width: 65%
+   :width: 238px
 
    Открытие параметров Windows через меню «Пуск».
 
@@ -37,7 +37,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat2.webp
    :alt: Раздел «Учётные записи» в параметрах Windows
    :align: center
-   :width: 75%
+   :width: 253px
 
    Раздел управления учётными записями.
 
@@ -49,7 +49,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat3.webp
    :alt: Пункт «Семья и другие пользователи»
    :align: center
-   :width: 70%
+   :width: 320px
 
    Переход к управлению другими пользователями компьютера.
 
@@ -58,7 +58,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat4.webp
    :alt: Кнопка добавления пользователя для этого компьютера
    :align: center
-   :width: 85%
+   :width: 473px
 
    Добавление нового пользователя.
 
@@ -68,7 +68,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat5.webp
    :alt: Ссылка «У меня нет данных для входа этого человека»
    :align: center
-   :width: 85%
+   :width: 360px
 
    Создание пользователя без данных существующей учётной записи Microsoft.
 
@@ -77,7 +77,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat6.webp
    :alt: Добавление пользователя без учётной записи Microsoft
    :align: center
-   :width: 85%
+   :width: 360px
 
    Переход к созданию локальной учётной записи.
 
@@ -90,7 +90,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat7.webp
    :alt: Поле имени нового локального пользователя
    :align: center
-   :width: 85%
+   :width: 360px
 
    Ввод имени локальной учётной записи латиницей.
 
@@ -101,7 +101,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat8.webp
    :alt: Поля пароля и контрольных вопросов новой учётной записи
    :align: center
-   :width: 85%
+   :width: 360px
 
    Настройка пароля и контрольных вопросов.
 
@@ -135,7 +135,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat9.webp
    :alt: Пункт «Запуск от имени другого пользователя» в контекстном меню
    :align: center
-   :width: 90%
+   :width: 360px
 
    Запуск программы от имени другого пользователя.
 
@@ -145,7 +145,7 @@
 .. figure:: /_static/articles/operating-systems/windows/create-windows-account-latin/acclat10.webp
    :alt: Окно ввода имени и пароля другого пользователя Windows
    :align: center
-   :width: 80%
+   :width: 360px
 
    Ввод данных локальной учётной записи.
 
